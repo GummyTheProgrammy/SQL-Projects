@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,phone,email,street,city,state,zip_code
+1500,Daniel,Almeida,321-987-6543,daniel.almeida@example.com,708 Pine St,Macaé,RJ,27930
+1501,Fernanda,Lima,111-222-3333,fernanda.lima@example.com,901 Oak Ave,Niterói,RJ,24210
+1502,Pedro,Gomes,444-555-6666,pedro.gomes@example.com,202 Maple Dr,Petrópolis,RJ,25610

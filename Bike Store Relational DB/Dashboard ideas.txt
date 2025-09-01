@@ -1,0 +1,11 @@
+Gráfico de barras: receita por loja. mostre a receita total de cada uma das lojas para ver qual delas tem a melhor performance. é uma visualização simples, mas muito eficaz.
+
+Gráfico de linha: receita anual ou mensal. use um gráfico de linha para mostrar a receita ao longo do tempo. você pode analisar a receita por ano, mês ou até mesmo por dia para identificar tendências, sazonalidade (por exemplo, meses de pico de vendas) e o crescimento da empresa.
+
+Gráficos de rosca de produtos por categoria / brand
+
+Gráfico de mapa: clientes por estado. use um mapa para visualizar de onde seus clientes são. isso pode te ajudar a identificar as regiões com maior concentração de clientes e guiar estratégias de marketing focadas em expansão geográfica.
+
+Cartão: kpis de alto nível. use os cartões para exibir métricas importantes em destaque, como a receita total, o desconto médio aplicado, o ticket médio do pedido ou o número total de clientes. eles são ótimos para dar uma visão geral logo de cara.
+
+Tabela de dados: crie uma tabela para detalhar os dados de pedidos individuais. você pode incluir colunas como o order_id, o nome do cliente, a data do pedido e a receita total. essa tabela é perfeita para análises mais aprofundadas.
