@@ -50,19 +50,39 @@ With the database populated and the data validated, the project advanced to crea
 
 ---
 
-## 5. Performance Analysis and Optimization
+## 5. Data Migration and Performance Analysis
 
-This phase focused on understanding and improving query performance.
+This phase focused on ensuring data is up-to-date and understanding query performance.
 
-* **Identifying Inefficiencies**: A key learning was that what appears to be a "slow" query on a small database may not actually be inefficient due to the low volume of data. For a query filtering high-spending customers, the in-practice performance of a subquery was deceptively fast.
-* **The Theory of Optimization**: Despite the small data size, the query was refactored from an inefficient correlated subquery to an optimized version using **`JOINs`** and a **`HAVING`** clause. This serves as a crucial exercise, demonstrating the **best practice** for building queries that scale.
-* **Conclusion**: While the optimized query did not show a major performance gain on this small dataset, the exercise highlights the importance of writing scalable queries. This prepares the solution to handle future growth and large-scale data without requiring a full refactor. The analysis of `EXPLAIN ANALYZE` also confirmed that the PostgreSQL query planner, for small tables, correctly chose a `Sequential Scan` over an `Index Scan` as the most efficient method.
+* **Data Migration Scripts**: Scripts were developed to automate the ingestion of new data (e.g., new sales for 2025). This process utilized the `\copy` command via `psql` to maintain data integrity.
+* **Identifying Inefficiencies**: A key learning was that what appears to be a "slow" query on a small database may not actually be inefficient due to the low volume of data. The in-practice performance of a subquery was deceptively fast.
+* **The Theory of Optimization**: Despite the small data size, a crucial exercise was refactoring from an inefficient correlated subquery to an optimized version using **`JOINs`** and a **`HAVING`** clause. This demonstrated the **best practice** for building queries that scale.
+* **Conclusion**: While the optimized query did not show a major performance gain on this small dataset, the exercise highlights the importance of writing scalable queries. This prepares the solution to handle future growth and large-scale data without a full refactor.
 
 ---
 
-## 6. Next Steps
+## 6. Business Intelligence and Dashboard Creation
 
-With the core functions and reports established, the project is ready to move into final automation and visualization. Future tasks will include:
+With the data validated and optimized, the project advanced to creating insightful reports and a dashboard using **Power BI**. This phase demonstrated the final product of the data pipeline.
 
-* Creating scripts for data migration and scheduled management reports.
-* Building insightful reports and dashboards using tools like Power BI.
+* **Key Performance Indicators (KPIs)**: Measures were created to track critical business metrics, including:
+    * `Total Revenue`
+    * `Units Sold`
+    * `Average Order Value`
+    * `Total Customers`
+* **Interactive Visualizations**: The dashboard includes a variety of visuals to analyze performance, such as:
+    * A line chart to track revenue over time.
+    * Pie charts for product distribution by category and brand.
+    * A bar chart showing the top 10 selling cities by revenue.
+    * KPI cards to display high-level metrics at a glance.
+* **Navigation**: Buttons were implemented to allow easy navigation between different pages of the report.
+
+---
+
+## 7. Next Steps
+
+The project has a solid foundation, but there are areas for future improvement and expansion:
+
+* **Automated Management Reports**: Develop scripts for scheduled report generation and delivery. This was attempted but will be a focus for a future iteration.
+* **Data Modeling**: Explore advanced data modeling concepts, sucho as star schemas, to enhance report performance.
+* **Data Source Integration**: Integrate new data sources, such as marketing or inventory data, to provide a more holistic view of the business.
