@@ -1,0 +1,22 @@
+{
+  "name": "Paleta de Cores Personalizada",
+  "dataColors": [
+    "#92c6fc",
+    "#fc92fb",
+    "#fcc892",
+    "#92fc93",
+    "#323334",
+    "#bfc2c5"
+  ],
+  "visualStyles": {
+    "*": {
+      "*": {
+        "*": [
+          {
+            "visualType": "all"
+          }
+        ]
+      }
+    }
+  }
+}
