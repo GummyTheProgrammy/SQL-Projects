@@ -77,6 +77,10 @@ With the data validated and optimized, the project advanced to creating insightf
     * KPI cards to display high-level metrics at a glance.
 * **Navigation**: Buttons were implemented to allow easy navigation between different pages of the report.
 
+### Dashboard Interativo
+
+Explore o dashboard de vendas em tempo real [aqui](https://app.powerbi.com/groups/me/reports/3bde9a5c-35cc-440b-9535-2390b7ca17cf/8c44b869f9a828ba438f?experience=power-bi).
+
 ---
 
 ## 7. Next Steps
